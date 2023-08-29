@@ -1,0 +1,25 @@
+   
+      <button
+        onClick={fetchData}
+        style={{
+          backgroundColor: "blue",
+          margin: "10px",
+          padding: "20px",
+          color: "black",
+          fontSize: "12px",
+        }}
+      >
+        show user featrus
+      </button>
+
+    
+    {users.map((item) => (
+        <div key={item.id}>
+          <p>{item.name}</p>
+          <p>{item.username}</p>
+          <p>{item.email}</p>
+        </div>
+      ))}
+
+         </div>
+ 

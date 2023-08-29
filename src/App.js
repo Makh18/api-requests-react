@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ErrorAsyncAwait from './components/ErrorAsyncAwait';
+import ErrorThen from './components/ErrorThen';
+import GetData from './components/GetData';
+import ReadData from './components/ReadData';
+import SearchUser from './components/SearchUser';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Fetching data using fetch API:</h1>
+          <GetData/>
+      <h1>  Fetching data based on some parameter:</h1>
+      <ReadData/>
+     <h1>Fetching data in React based on user input (onChange):</h1>
+      <SearchUser/>
+      <h1>Handling Error</h1>
+      <ErrorThen/>
+      <h1>Handling Error Async/await</h1>
+      <ErrorAsyncAwait/>
+
     </div>
   );
 }
